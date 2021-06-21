@@ -1,0 +1,410 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: tahoma;
+    /* border: 1px solid orangered; */
+}
+
+:root {
+    --color-one: rgb(253, 254, 254);
+    --color-two: rgb(24, 24, 24);
+    --color-three:  #ffd900ef;
+}
+
+body {
+    background: var(--color-one);
+}
+
+p {
+    line-height: 1.7rem;
+}
+
+h1 {
+    color: var(--color-one);
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+
+
+/* -----  HEADER  ----- */
+header {
+    background-color: var(--color-two);
+    padding: 10px;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.185),
+                0 7px 10px rgba(0, 0, 0, 0.281),
+                0 1px 5px rgba(0, 0, 0, 0.350);
+
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    display: flex;
+    justify-content: center;
+}
+
+.centrar {
+    width: 1200px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.header-1 {
+    width: 100%;
+}
+
+.logo-1 {
+    font-size: .8rem;
+    margin: 0 0 -6px 17px;
+    font-style: italic;
+    color: orangered;
+    text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.548);
+}
+
+.logo-2 {
+    font-size: 1.5rem;
+    font-style: italic;
+
+    text-shadow: 2px 5px 10px rgba(0, 0, 0, 0.555);
+}
+
+.header-1 > ul {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-size: small;
+    color: var(--color-three);
+}
+
+a:hover {
+    color: orangered;
+}
+
+a:active {
+    color: var(--color-three);
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown span {
+    position: relative;
+    z-index: 2;
+}
+
+.features {
+    display: none;
+}
+
+.dropdown:hover .features {
+    display: block;
+    padding: 50px 20px 10px;
+    background-color: var(--color-two);
+    border-radius: 10px;
+    width: max-content;
+
+    position: absolute;
+    top: -5px;
+    left: -20px;
+    z-index: 1;
+}
+
+.features li {
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--color-one);
+    margin-bottom: 20px;
+}
+
+.features li:last-of-type {
+    margin-bottom: 0;
+    border-bottom: none;
+}
+
+
+
+/* -----  MAIN  ----- */
+.section-1,
+.section-2 {
+    display: flex;
+    justify-content: center;
+    padding: 15px 10px;
+}
+
+.section-1 {
+    height: 700px;
+    padding: 0 10px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25),         
+                    rgba(0, 0, 0, 0.151)),
+                    url(../images/auto-body-repair.jpg);
+    background-position: center;
+    background-size: cover;
+
+    align-items: flex-end;
+}
+
+.centrar-1 {
+    width: 1200px;
+    padding: 10px;
+}
+
+.section-1-logo h2 {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin: 0 0 -12px 32px;
+    color: transparent;
+    position: relative;    
+}
+
+.section-1-logo h2:before {
+    content: "Deep";
+    color: orangered;
+    position: absolute;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, .5),
+                8px 8px 8px rgba(0, 0, 0, 0.3),
+                16px 16px 16px rgba(0, 0, 0, 0.1);
+
+    animation: deep;
+    animation-duration: 2s;
+    animation-iteration-count: initial;
+}
+
+.section-1-logo h1 {
+    font-size: 2.5rem;
+    font-style: italic;
+    color: transparent;
+    position: relative;    
+}
+
+.section-1-logo h1:before {
+    content: "Performance Customs";
+    color: var(--color-one);
+    text-shadow: 10px 15px 20px rgba(0, 0, 0, 0.185),
+                5px 7px 10px rgba(0, 0, 0, 0.452);
+    position: absolute;
+
+    animation: performance;
+    animation-duration: 2s;
+    animation-iteration-count: initial;
+}
+
+
+/* --section-2-- */
+.section-2 {
+    min-height: 400px;
+    background-color: var(--color-one);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2),
+                inset 0 2px 2px rgba(0, 0, 0, 0.15),
+                inset 0 4px 4px rgba(0, 0, 0, 0.1),
+                inset 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.centrar-1-1 {
+    width: 300px;
+    height: 390px;
+    padding: 20px;
+    background-color: rgba(253, 244, 189, 0.932);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1), 
+                0 2px 2px rgba(0,0,0,0.1), 
+                0 4px 4px rgba(0,0,0,0.1), 
+                0 0 8px rgba(0,0,0,0.1);
+
+    position: relative;
+}
+
+.centrar-1-1:hover {
+    transition: .5s;    
+    border-radius: 0 15px 0 15px;
+    background-color: rgba(252, 240, 174, 0.932);
+    box-shadow: 1px 1px 1px rgb(130, 130, 130),
+                2px 2px 2px rgb(125, 125, 125),
+                3px 3px 3px rgb(120, 120, 120),
+                4px 4px 4px rgb(115, 115, 115),
+                5px 5px 5px rgb(110, 110, 110),
+                6px 6px 6px rgb(105, 105, 105),
+                7px 7px 0 rgb(100, 100, 100),
+                8px 8px 0 rgb(95, 95, 95),
+                9px 9px 0 rgb(90, 90, 90),
+                10px 10px 0 rgb(70, 70, 70),
+                11px 11px 11px rgba(0, 0, 0, 0.4),
+                12px 12px 12px -12px rgba(0, 0, 0, 0.3),
+                13px 13px 13px -13px rgba(0, 0, 0, 0.2),
+                14px 14px 14px -14px rgba(0, 0, 0, 0.1),
+                15px 15px 15px -15px rgba(0, 0, 0, 0.05);
+}
+
+.spray {
+    display: none;
+}
+
+.centrar-1-1:hover .spray {
+    display: block;
+    transition: .1s;
+    width: 65px;
+    position: absolute;
+    top: -35px;
+    right: -60px;
+    transform: rotate(-20deg);
+}
+
+.centrar-1-1 h2 {
+    text-align: center;
+    padding: 10px 15px 15px;
+    text-transform: uppercase;
+    color: rgb(233, 62, 0);
+    font-style: italic;
+    text-shadow: 0 15px 20px rgba(0, 0, 0, 0.185),
+                0 7px 10px rgba(0, 0, 0, 0.285);
+}
+
+.centrar-1-1 p {
+    color: var(--color-two);
+    text-shadow: 0 10px 15px rgba(0, 0, 0, 0.020),
+                0 5px 10px rgba(0, 0, 0, 0.125);
+}
+
+
+
+/* -----  FOOTER  ----- */
+footer {
+    padding: 10px;
+    min-height: 350px;
+    color: rgb(200, 200, 200);
+    background-color: var(--color-two);
+
+    display: flex;
+    justify-content: center;
+}
+
+.footer-centrar {
+    width: 1200px;
+}
+
+.footer-1 {
+    margin-bottom: 60px;
+    border-bottom: 1px solid var(--color-one);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-1-1 {
+    min-height: 85px;
+    margin-bottom: 40px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-one {
+    min-height: 50px;
+    width: 275px;
+    margin-bottom: 20px;
+}
+
+.logo p {
+    padding-top: 20px;
+    font-size: .9rem;
+}
+
+.navigation h3 {
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.navigation nav ul li {
+    font-size: .9rem;
+    margin-bottom: 10px;
+}
+
+
+.footer-one:nth-child(4) {
+    width: 150px;
+    
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .social-media .fab {
+    width: 30px;
+} */
+
+.fab {
+    font-size: 28px;
+}
+
+.contact h2 {
+    color: orangered;
+    font-weight: normal;
+    margin: 10px 0 5px;
+}
+
+.trademark {
+    text-align: center;
+    font-size: .95rem;
+    margin-bottom: 35px;
+}
+
+.company {
+    width: 250px;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 1px 1px rgba(245, 245, 245, 0.2),
+                0 2px 2px rgba(245, 245, 245, 0.2),
+                0 4px 4px rgba(245, 245, 245, 0.2),
+                0 0 4px rgba(245, 245, 245, 0.2);
+}
+
+.company:active {
+    transform: scale(0.95);
+    box-shadow: 0 1px 1px rgba(255, 68, 0, 0.151),
+                0 2px 2px rgba(255, 68, 0, 0.13),
+                0 4px 4px rgba(255, 68, 0, 0.116),
+                0 0 4px rgba(255, 68, 0, 0.11);
+}
+
+.company a {
+    color: inherit;
+}
+
+.company p {
+    font-size: .85rem;
+}
+
+.company-image h2{
+    font-weight: normal;
+    text-transform: uppercase;
+    color: rgb(233, 62, 0);
+}
