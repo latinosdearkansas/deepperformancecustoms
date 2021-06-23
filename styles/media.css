@@ -1,6 +1,28 @@
 @media only screen and (max-width: 599px) {
-    body {
-        
+    /* -----  Nav  ----- */
+    
+    .header-1 > ul {
+        flex-direction: column;
+        background: var(--color-two);
+        padding: 5px 30px;
+        border-radius: 0 0 5px 5px;
+
+        position: absolute;
+        left: -160px;
+        transition: 1s;
+    }
+
+    .header-1 .fas {
+        display: block;
+        color: whitesmoke;
+    }
+
+    .header-1 > ul > li {
+        margin-bottom: 25px;
+    }
+    
+    .dropdown:hover .features {
+        display: none;
     }
 }
 
@@ -9,6 +31,10 @@
 
 
     /* -----  HEADER  ----- */
+    header {
+        position: sticky;
+    }
+
     .centrar {
         
     }
@@ -40,6 +66,10 @@
 
 
     /* -----  HEADER  ----- */
+    header {
+        position: sticky;
+    }
+
     .centrar {
         flex-wrap: nowrap;
     }

@@ -48,7 +48,7 @@ header {
                 0 7px 10px rgba(0, 0, 0, 0.281),
                 0 1px 5px rgba(0, 0, 0, 0.350);
 
-    position: sticky;
+    
     top: 0;
     z-index: 1;
 
@@ -64,10 +64,17 @@ header {
     align-items: center;
     flex-wrap: wrap;
     gap: 15px;
+
+    position: relative;
 }
 
 .header-1 {
     width: 100%;
+}
+
+.header-1 .fas {
+    display: none;
+    font-size: 20px;
 }
 
 .logo-1 {
