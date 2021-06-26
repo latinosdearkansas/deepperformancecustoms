@@ -16,7 +16,7 @@
     .header-1 > ul {
         flex-direction: column;
         background: var(--color-two);
-        padding: 30px 60px;
+        padding: 80px 60px 20px;
         border-radius: 0 0 5px 0;
 
         position: absolute;
@@ -35,6 +35,12 @@
         position: absolute;
         top: 16px;
         left: 20px;
+    }
+
+    .fas.fa-times {
+        position: absolute;
+        top: 10px;
+        left: 22px;
     }
 
     .header-1 > ul > li {
