@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: tahoma;
+    font-family: 'poppins', tahoma;
     /* border: 1px solid orangered; */
 }
 
@@ -232,12 +232,12 @@ a:active {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 20px;
 }
 
 .centrar-1-1 {
-    width: 300px;
-    height: 390px;
+    width: 320px;
+    height: 420px;
     padding: 20px;
     background-color: rgba(253, 244, 189, 0.932);
     box-shadow: 0 1px 1px rgba(0,0,0,0.1), 

@@ -103,6 +103,17 @@
 
 
     /* -----  MAIN  ----- */
+    .section-1 {
+        height: 800px;
+    }
+
+    .nombre {
+        width: 960px;
+        margin: 0 auto;
+        position: relative;
+        top: 40px;
+    }
+
     .section-1-logo h2 {
         font-size: 3.3rem;
         margin: 0 0 -60px 70px;
@@ -114,6 +125,10 @@
 
     .section-2 {
         padding: 80px 10px;
+    }
+
+    .content {
+        justify-content: space-between;
     }
 
 
