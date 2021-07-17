@@ -387,6 +387,7 @@ footer {
 }
 
 .company {
+    font-family: 'business';
     width: 250px;
     margin: 0 auto;
     padding: 10px;
@@ -411,11 +412,16 @@ footer {
 }
 
 .company p {
-    font-size: .85rem;
+    font-size: .7rem;
+    margin-bottom: -10px;
 }
 
 .company-image h2{
     font-weight: normal;
     text-transform: uppercase;
     color: rgb(233, 62, 0);
+}
+
+address {
+    line-height: 1.4;
 }
