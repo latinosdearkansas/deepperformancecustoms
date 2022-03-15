@@ -8,7 +8,7 @@
 
 :root {
     --color-one: rgb(253, 254, 254);
-    --color-two: rgb(24, 24, 24);
+    --color-two: linear-gradient(135deg, #202020, #131212, #0c0b0b);
     --color-three:  #ffd900ef;
 }
 
@@ -46,7 +46,7 @@ img {
 
 /* -----  HEADER  ----- */
 header {
-    background-color: var(--color-two);
+    background: var(--color-two);
     padding: 10px;
     box-shadow: 0 15px 20px rgba(0, 0, 0, 0.185),
                 0 7px 10px rgba(0, 0, 0, 0.281),
@@ -312,7 +312,7 @@ footer {
     padding: 10px;
     min-height: 350px;
     color: rgb(200, 200, 200);
-    background-color: var(--color-two);
+    background: var(--color-two);
 
     display: flex;
     justify-content: center;
