@@ -107,6 +107,8 @@
     /* -----  MAIN  ----- */
     .section-1 {
         height: 830px;
+        background-position: center,
+                            center bottom;
     }
 
     .nombre {

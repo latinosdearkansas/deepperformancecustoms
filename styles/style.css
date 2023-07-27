@@ -163,10 +163,11 @@ a:active {
 .section-1 {
     height: 700px;
     padding: 0 10px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2),         
-                    rgba(0, 0, 0, 0.1)),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15),         
+                    rgba(0, 0, 0, 0.05)),
                     url(../images/bugatti-paintwork.jpg);
     background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
 
     align-items: flex-end;
