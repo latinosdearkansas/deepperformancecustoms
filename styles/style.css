@@ -88,7 +88,7 @@ header {
 
 .logo-2 {
     font-size: 0.75rem;
-    letter-spacing: 2px;
+    letter-spacing: 1.2px;
 
     text-shadow: 2px 5px 10px rgba(0, 0, 0, 0.555);
 }
@@ -183,8 +183,8 @@ a:active {
     position: relative;   
     z-index: 1; 
     color: orangered;
-    text-shadow: 4px 4px 4px rgba(0, 0, 0, .5),
-                8px 8px 8px rgba(0, 0, 0, 0.3),
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, .2),
+                8px 8px 8px rgba(0, 0, 0, 0.1),
                 16px 16px 16px rgba(0, 0, 0, 0.1);
 
     animation: deep;
@@ -199,8 +199,8 @@ a:active {
     padding: 0 4px;
     height: 24px;
 
-    box-shadow: 2px 2px 1px rgba(0, 0, 0, .2),
-                4px 4px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .2),
+                4px 4px 8px rgba(0, 0, 0, 0.2);
 
     animation: white-background;
     animation-duration: 2800ms;
@@ -212,11 +212,11 @@ a:active {
 .section-1-logo h1 {
     font-family: 'timana';
     font-size: 1rem;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     position: relative;   
     color: var(--color-one);
-    text-shadow: 8px 12px 15px rgba(0, 0, 0, 0.25),
-                4px 6px 4px rgba(0, 0, 0, 0.452);
+    text-shadow: 4px 6px 4px rgba(0, 0, 0, 0.25),
+                8px 12px 15px rgba(0, 0, 0, 0.252);
 
     animation: performance;
     animation-duration: 1800ms;
