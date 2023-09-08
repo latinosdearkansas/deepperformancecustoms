@@ -119,6 +119,7 @@
     .section-1-logo h2 {
         font-size: 7rem;
         margin: 0 0 -89px 0;
+        letter-spacing: -3px;
     }
 
     .white-background {
@@ -127,7 +128,7 @@
 
     .section-1-logo h1 {
         font-size: 3.75rem;
-        letter-spacing: 3.5px;
+        letter-spacing: 3px;
         margin-bottom: 20px;
     }
 
